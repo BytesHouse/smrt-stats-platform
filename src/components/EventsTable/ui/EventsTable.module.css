@@ -1,0 +1,21 @@
+.eventsTable {
+    height: 680px;
+    width: 25vw;
+    background-color: #171F2F;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-left: 53px;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-left: 20px;
+}

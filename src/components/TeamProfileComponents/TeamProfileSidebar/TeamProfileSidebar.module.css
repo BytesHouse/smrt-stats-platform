@@ -1,0 +1,44 @@
+.sidebarContanier {
+  display: flex;
+  border-radius: 10px 10px 0px 0px;
+  height: calc((100vh - 105px) * var(--scale-multiplier));
+  transition: all ease-in-out .5s;
+  padding: 20px 60px 20px 20px;
+  position: relative;
+  /* background: linear-gradient(
+    185.56deg,
+    #3f3f3f 4.43%,
+    rgba(253, 253, 253, 0.541667) 47.64%,
+    rgba(197, 162, 110, 0) 98.7%
+  ); */
+  background: var(--main-midnight-blue);
+  max-width: 290px;
+}
+
+.sidebarContanier.disclosed {
+  width: 100%;
+  max-width: 770px;
+}
+
+.discloseBtn {
+  width: 60px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: right;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.discloseBtn:hover {
+  background-color: #00000017;
+}
+
+.discloseBtn svg {
+  fill: #fff;
+  width: 40px;
+  height: 40px;
+}

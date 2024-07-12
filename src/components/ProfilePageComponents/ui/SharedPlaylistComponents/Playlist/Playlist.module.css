@@ -1,0 +1,260 @@
+.playlistContainer {
+  height: calc((100vh - 170px) * var(--scale-multiplier));
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.playlistEmpty {
+  background: var(--main-gray);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: calc((100vh - 170px) * var(--scale-multiplier));
+  color: var(--main-midnight-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.playlistItem {
+  background: var(--main-gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px 10px 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #000;
+  cursor: pointer;
+}
+
+.playlistItem:hover {
+  background: var(--main-whitesmoke);
+}
+
+.playlistItemLeftConent>svg>path,
+.playlistItemRightConent>svg>path {
+  stroke: #000;
+}
+
+.playlistItemLeftConent {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.playlistItemRightConent {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.playlistItemRightConent>svg {
+  width: 25px;
+}
+
+.playlistItemEvent,
+.playlistItemEmail {
+  background: var(--main-whitesmoke);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px 10px 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--main-midnight-blue);
+  cursor: pointer;
+  border: 1px solid #18243d;
+  margin-bottom: 5px;
+}
+
+.playlistItemEvent:hover {
+  background: var(--main-sky-blue);
+}
+
+.playlistItemEventLeftContent {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.playlistItemEventRightContent {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.playlistItemEventRightContent>svg {
+  width: 25px;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectContainer>input {
+  width: 100%;
+  padding: 0px 10px;
+  border-radius: 4px;
+  border: none;
+  min-height: 45px;
+  margin: 10px 0;
+}
+
+.emailLoadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.shareModalContent {
+  min-width: 400px;
+}
+
+.userEmail {
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+.userEmail:hover {
+  cursor: pointer;
+  color: #0F1521;
+  background-color: #BEFF4C;
+}
+
+.selectedUserEmail {
+  color: #0F1521;
+  background-color: #BEFF4C;
+}
+
+.selectedEmails,
+.foundedEmailsContainer {
+  margin: 10px 0 20px 0;
+  padding: 10px;
+  background-color: #222f4b;
+  border-radius: 4px;
+  max-height: 330px;
+  overflow-y: auto;
+}
+
+.selectedEmails>div:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.selectedEmails>b,
+.foundedEmailsContainer>b {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.selectedEmails>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+
+.selectedEmailsDelete {
+  width: 24px;
+  height: 24px;
+}
+
+.selectedEmailsDelete:hover {
+  color: #0F1521;
+  background-color: #BEFF4C;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.shareBtn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+  color: #0F1521;
+  background: #BEFF4C;
+  border-radius: 10px;
+  width: 157px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
+.activeBtn {
+  color: #0F1521;
+  background: #BEFF4C;
+  pointer-events: all;
+}
+
+.disabledBtn {
+  color: #ababab;
+  background: #818181;
+  pointer-events: none;
+}
+
+.errMsg {
+  color: #ff4141;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.addBtn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+  color: #0F1521;
+  background: #BEFF4C;
+  border-radius: 10px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.playlistItemViews {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+  .shareModalContent {
+    min-width: 300px;
+  }
+}

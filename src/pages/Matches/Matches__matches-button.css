@@ -1,0 +1,12 @@
+.Matches__matches-button {
+    background: #135A37;
+    border: 1px solid #FFFFFF;
+    width: 160px;
+    height: 39px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,36 @@
+.input {
+  background: rgba(29, 38, 56, 0.6);
+  box-shadow: inset -3px 1px 20px #1774ff;
+  border-radius: 10px;
+  color: #fff;
+  min-width: 300px;
+  border: none;
+  padding: 10px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+}

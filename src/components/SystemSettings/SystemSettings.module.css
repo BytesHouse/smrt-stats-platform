@@ -1,0 +1,61 @@
+.settings-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    max-height: 500px;
+    border-radius: 5px;
+    margin: 0 20px 20px 0;
+    z-index: 100000;
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    border: none;
+}
+
+.settings-container .header {
+    padding-bottom: 10px;
+}
+
+.settings-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.settings-container form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: #0f1521;
+    box-shadow: inset 4px 1px 30px 9px #1ceb33;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.settings-container form label {
+    display: flex;
+    gap: 5px;
+    text-transform: capitalize;
+}
+
+.settings-container .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.settings__collapsed {
+    fill: red;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    margin: 0 20px 20px 0;
+    cursor: pointer;
+}

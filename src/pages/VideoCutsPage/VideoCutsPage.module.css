@@ -1,0 +1,17 @@
+.videoCutsPageContainer {
+    background: linear-gradient(184.33deg, #5C5C5C 1.09%, rgba(242, 242, 242, 0.536458) 51.29%, rgba(197, 162, 110, 0) 109.38%);
+    border-radius: 0px 10px 10px 0px;
+    padding-top: 10px;
+    padding-right: 20px;
+    display: flex;
+    height: calc((100vh - 100px) * var(--scale-multiplier));
+
+}
+
+.videoCutsWrapper {
+    width: 100%;
+    display: flex;
+    background: #010101;
+    border-radius: 0px 10px 0px 0px;
+    padding: 40px 40px 20px 20px;
+}

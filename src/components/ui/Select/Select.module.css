@@ -1,0 +1,108 @@
+.selectContainer {
+  min-width: 200px;
+  width: 100%;
+  position: relative;
+
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.selectBtn {
+  display: flex;
+  align-items: center;
+  background: #1d1d1d;
+  /* box-shadow: inset 0px 1px 12px 3px #1774FF; */
+  /* box-shadow: inset 0px 4px 19px -2px #B4EB54; */
+  border-radius: 5px;
+  color: #fff;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.selectBtn > span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
+  text-align: center;
+}
+
+.selectBtn > svg {
+  position: absolute;
+  right: 10px;
+  fill: #fff;
+}
+
+.selectDropdown {
+  position: absolute;
+  top: 100%;
+  background: #1d1d1d;
+  /* box-shadow: inset 0px 1px 12px 3px #1774FF; */
+  /* box-shadow: inset 0px 4px 19px -2px #b4eb54; */
+  width: calc(100% - 20px);
+  padding: 10px;
+  z-index: 1;
+  max-height: 300px;
+  overflow-y: auto;
+  list-style-type: none;
+
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--main-whitesmoke);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.selectDropdown > span {
+  color: #fff;
+}
+
+.selectDropdownItem {
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10px;
+  border: 1px solid #171f2f00;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.selectDropdownItem:hover {
+  border: 1px solid #24f2ff;
+  /* box-shadow: inset 1px 1px 13px 2px #1774FF; */
+  box-shadow: inset 1px 1px 13px 2px #b4eb54;
+}
+
+.dropdown__optionSpan {
+  margin-left: 5px;
+}
+
+.downloadButton {
+  width: 150px;
+  height: 20px;
+  background: #171f2f;
+  /* box-shadow: inset 0px 1px 12px 3px #1774FF; */
+  box-shadow: inset 0px 1px 12px 3px #b4eb54;
+  border: none;
+  color: white;
+  border-radius: 5px 5px 0px 0px;
+  cursor: pointer;
+}
+
+.downloadButton:disabled {
+  box-shadow: none;
+}
+
+.dropdown__option {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdown__option:hover {
+  background: var(--main-light-blue);
+  color: var(--main-midnight-blue);
+}

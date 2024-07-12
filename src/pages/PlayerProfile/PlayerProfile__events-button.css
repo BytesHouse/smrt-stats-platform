@@ -1,0 +1,13 @@
+.PlayerProfile__events-button{
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #FFFFFF;
+    width: 160px;
+    height: 39px;
+    color: white;
+    border-radius: 0px 10px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

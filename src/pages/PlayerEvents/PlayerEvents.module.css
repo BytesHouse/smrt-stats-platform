@@ -1,0 +1,81 @@
+.playerEvents {
+    background-color: #0F1521;
+    display: flex;
+    overflow: hidden;
+}
+
+.greenBackgroundLeft {
+    width: 20vw;
+    height: 900px;
+    background-color: #135A37;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+}
+
+.buttonsContainer {
+    display: flex;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.matchesButton {
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #FFFFFF;
+    width: 160px;
+    height: 39px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventsButton {
+    background: #135A37;
+    border: 1px solid #FFFFFF;
+    width: 160px;
+    height: 39px;
+    color: white;
+    border-radius: 0px 10px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greenBackgroundRight {
+    height: 819px;
+    width: 80vw;
+    background: #135A37;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.whiteBackground{
+    width: 78vw;
+    height: 792px;
+    background-color: white;
+    border-radius: 0px 10px 10px 10px;
+    position: relative;
+    top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.blackBackground {
+    height: 745px;
+    width: 76vw;
+    border-radius: 0px 10px 10px 0px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}

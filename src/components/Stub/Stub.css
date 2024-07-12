@@ -1,0 +1,22 @@
+.stub {
+    height: calc(100vh * var(--scale-multiplier));
+    width: calc(100vw * var(--scale-multiplier));
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 999;
+    color: white;
+}
+
+.content {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #0F1521;
+    width: 400px;
+    transition: 0.4s all;
+}

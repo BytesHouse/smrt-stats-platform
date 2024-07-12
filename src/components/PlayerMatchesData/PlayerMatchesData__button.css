@@ -1,0 +1,14 @@
+.PlayerMatchesData__button {
+    background-image: url(../../../public/images/arrow-match.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 16px;
+    background-color: unset;
+    border: unset;
+    margin-right: 30px;
+}
+.PlayerMatchesData__button:hover {
+    cursor: pointer;
+}

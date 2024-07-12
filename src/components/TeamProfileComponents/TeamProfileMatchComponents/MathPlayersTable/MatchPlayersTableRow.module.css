@@ -1,0 +1,19 @@
+
+.playersTableRow {
+    display: flex;
+    align-items: center;
+}
+
+.playersTableRow>div:nth-child(2) {
+    width: 200%;
+}
+
+.playersTableRow>div {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px;
+    border: 0.5px solid #fff;
+}

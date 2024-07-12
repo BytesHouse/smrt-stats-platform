@@ -1,0 +1,99 @@
+.profilePageContainer {
+    padding: 25px 30px 0px 30px;
+    background-color: var(--main-whitesmoke);
+}
+
+.profilePageContainerInside {
+    background: var(--main-midnight-blue);
+    border-radius: 10px 10px 0px 0px;
+    padding: 40px 20px 0px 20px;
+    margin: 54px 0 0 0;
+    position: relative;
+    height: calc((100vh - 89px) * var(--scale-multiplier));
+}
+
+.profilePageContainerInside>header {
+    display: flex;
+    position: absolute;
+    top: -49px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.profilePageHeaderLeftContent {
+    display: flex;
+    gap: 4px;
+    margin-left: 20px;
+}
+
+.profilePageHeaderRightContent {
+    display: flex;
+    gap: 4px;
+    margin-right: 100px;
+}
+
+.profilePageHeaderBtn {
+    border-radius: 10px 10px 0px 0px;
+    min-width: 205px;
+    height: 88px;
+    background: var(--main-midnight-blue);
+    backdrop-filter: blur(15px);
+    justify-content: center;
+    color: var(--main-whitesmoke);
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.profilePageHeaderBtn:not(.logo):hover {
+    background-color: var(--main-navy-blue);
+}
+
+.profilePageHeaderBtn.active {
+    background: var(--main-navy-blue);
+}
+
+.profilePageHeaderBtn.logo {
+    background: var(--main-gray);
+    backdrop-filter: blur(2px);
+    border: none;
+    height: 88px;
+}
+
+.profilePageHeaderBtn.logo>img {
+    width: 85%;
+    object-fit: contain;
+    height: 85%;
+}
+
+.profilePageHeaderExitBtn {
+    background: var(--main-gray);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    backdrop-filter: blur(2px);
+    border-radius: 10px 10px 0px 0px;
+    width: 69px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.profilePageHeaderExitBtn:hover {
+    background: rgba(245, 26, 50, 0.7);
+}
+
+.profilePageHeaderExitBtn>svg {
+    width: 30px;
+    fill: #fff;
+}

@@ -1,0 +1,9 @@
+.RIGHT {
+    transform: rotate(180deg);
+}
+.DOWN {
+    transform: rotate(270deg);
+}
+.UP {
+    transform: rotate(90deg);
+}

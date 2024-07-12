@@ -1,0 +1,12 @@
+.MatchesStatistics__table {
+    background: #0F1521;
+    border-radius: 0px 10px 10px 0px;
+    
+    font-style: normal;
+    text-align: center;
+    color: #FFFFFF;
+    width: 78vw;
+    border-collapse: collapse;
+    border: 2px solid white;
+    width: 77vw;
+}

@@ -1,0 +1,5 @@
+.FavoritesPageContent {
+    height: calc((100vh - 89px) * var(--scale-multiplier));
+    background: var(--main-navy-blue);
+    border-radius: 10px 10px 0px 0px;
+}

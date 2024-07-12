@@ -1,0 +1,206 @@
+@import url(./vendor/normalize.css);
+@import url(./fonts/Hind-Jalandhar/Hind-Jalandhar.css);
+@import url(./components/App/App.css);
+@import url(./pages/PlayerProfile/PlayerProfile.css);
+@import url(./pages/PlayerProfile/PlayerProfile__container.css);
+@import url(./pages/PlayerProfile/PlayerProfile__events-button.css);
+@import url(./pages/PlayerProfile/PlayerProfile__matces-button.css);
+@import url(./pages/PlayerProfile/PlayerProfile__green-background-left.css);
+@import url(./pages/PlayerProfile/PlayerProfile__green-background-right.css);
+@import url(./pages/PlayerProfile/PlayerProfile__white-background.css);
+@import url(./pages/PlayerProfile/PlayerProfile__buttons-container.css);
+@import url(./components/PlayerCard/PlayerCard.css);
+@import url(./components/PlayerCard/PlayerCard__container.css);
+@import url(./components/PlayerCard/PlayerCard__image-container.css);
+@import url(./components/PlayerCard/PlayerCard__table-body-item.css);
+@import url(./components/PlayerCard/PlayerCard__table-body.css);
+@import url(./components/PlayerCard/PlayerCard__table-head-item.css);
+@import url(./components/PlayerCard/PlayerCard__table-head.css);
+@import url(./components/PlayerCard/PlayerCard__table-row-item.css);
+@import url(./components/PlayerCard/PlayerCard__table.css);
+@import url(./components/PlayerCard/PlayerCard__team-container.css);
+@import url(./components/PlayerCard/PlayerCard__flag-image.css);
+@import url(./components/PlayerCard/PlayerCard__player-image.css);
+@import url(./components/PlayerCard/PlayerCard__team-image.css);
+@import url(./components/PlayerStatistics/PlayerStatistics.css);
+@import url(./components/PlayerStatistics/PlayerStatistics__table.css);
+@import url(./components/PlayerStatistics/PlayerStatisticks__caption.css);
+@import url(./components/PlayerStatistics/PlayerStatisticks__table-body-index.css);
+@import url(./components/PlayerStatistics/PlayerStatisticks__table-body-item.css);
+@import url(./components/PlayerStatistics/PlayerStatisticks__table-body-title.css);
+@import url(./components/PlayerStatistics/PlayerStatisticks__table-body.css);
+@import url(./components/PlayerStatistics/PlayerStatisticks__table-row.css);
+@import url(./components/PlayerMatchesData/PlayerMatchesData.css);
+@import url(./components/PlayerMatchesData/PlayerMatchesData__button.css);
+@import url(./components/PlayerMatchesData/PlayerMatchesData__title.css);
+@import url(./components/PlayerMatchesData/PlayerMatchesData__date.css);
+@import url(./components/PlayerMatchesData/PlayerMatchesData__events-container.css);
+@import url(./components/PlayerMatchesData/PlayerMatchesData__image-container.css);
+@import url(./components/PlayerMatchesData/PlayerMatchesData__match-name.css);
+@import url(./components/PlayerMatchesData/PlayerMatchesData__team-image.css);
+@import url(./components/PlayerMatchesData/PlayerMatchesData__content.css);
+@import url(./components/ProfileMenu/ProfileMenu.css);
+@import url(./components/ProfileMenu/ProfileMenu__container.css);
+@import url(./components/ProfileMenu/ProfileMenu__button.css);
+@import url(./components/ProfileMenu/ProfileMenu__button-video.css);
+@import url(./pages/Matches/Matches.css);
+@import url(./pages/Matches/Matches__buttons-container.css);
+@import url(./pages/Matches/Matches__container.css);
+@import url(./pages/Matches/Matches__events-button.css);
+@import url(./pages/Matches/Matches__green-background-left.css);
+@import url(./pages/Matches/Matches__green-background-right.css);
+@import url(./pages/Matches/Matches__matches-button.css);
+@import url(./pages/Matches/Matches__white-background.css);
+@import url(./pages/Matches/Matches__settings-container.css);
+@import url(./pages/Matches/Matches__setting-button.css);
+@import url(./components/MatchesStatistics/MatchesStatistics.css);
+@import url(./components/MatchesStatistics/MatchesStatistics__table-header.css);
+@import url(./components/MatchesStatistics/MatchesStatistics__table.css);
+@import url(./components/MatchesStatistics/MatchesStatistics__table-head.css);
+@import url(./components/MatchesPopup/MatchesPopup.css);
+@import url(./components/MatchesPopup/MatchesPopup_opened.css);
+@import url(./components/MatchesPopup/MatchesPopup__container.css);
+@import url(./components/MatchesData/MatchesData.css);
+@import url(./components/MatchesData/MatchesData__title.css);
+@import url(./components/MatchesData/MatchesData__info-subtitle.css);
+@import url(./components/MatchesData/MatchesData__table-container.css);
+@import url(./components/MatchesData/MatchesData__table.css);
+@import url(./components/MatchesData/MatchesData__table-row.css);
+@import url(./components/MatchesData/MatchesData__competition-container.css);
+@import url(./components/MatchesData/MatchesData__team-image.css);
+@import url(./components/MatchesData/MatchesData__table-caption.css);
+@import url(./components/MatchesData/MatchesData__competition.css);
+@import url(./components/SystemSettings/SystemSettings.module.css);
+@import url("https://fonts.cdnfonts.com/css/segoe-ui-4");
+@import url(./fonts/satoshi/stylesheet.css);
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+*{
+  transition: background-color 250ms ease-in-out;
+}
+
+:root[data-theme="light"] {
+  --scale-multiplier: 1.333;
+  --bg-color-green: #b4eb54;
+  --main-midnight-blue: #0f1521;
+  --main-navy-blue: #252844;
+  --main-gray: #a0a2a4;
+  --main-light-blue: #96c6e1;
+  --main-sky-blue: #e9f8ff;
+  --main-whitesmoke: #f5f5f5;
+}
+
+:root[data-theme="dark"] {
+  --scale-multiplier: 1.333;
+  --bg-color-green: #b4eb54;
+  --main-midnight-blue: #d5d5d5;
+  --main-navy-blue: rgb(142, 142, 142);
+  --main-gray: #3C4D6E;
+  --main-light-blue: #006666;
+  --main-sky-blue: #ffffff;
+  --main-whitesmoke: #1D2638;
+}
+
+@-moz-document url-prefix() {
+  :root[data-theme="light"] {
+    --scale-multiplier: 1;
+    --bg-color-green: #b4eb54;
+    --main-midnight-blue: #0f1521;
+    --main-navy-blue: #252844;
+    --main-gray: #a0a2a4;
+    --main-light-blue: #96c6e1;
+    --main-sky-blue: #e9f8ff;
+    --main-whitesmoke: #f5f5f5;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  zoom: 0.75;
+  font-family: "Satoshi", "Segoe UI", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #192233;
+  /* border: 1px solid #B4EB54; */
+  border-radius: 10px;
+  /* box-shadow: inset 0px -17px 8px #1774FF; */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #0f1521;
+}
+
+/* global formation styles */
+.players_left > g,
+.players_right > g,
+.yellow-card,
+.red-card,
+.goal {
+  transition: all 0.5s ease-in-out;
+  animation-duration: 0.5s;
+  animation-name: showIn;
+  pointer-events: auto;
+}
+
+.players_left > g.out-field,
+.players_right > g.out-field,
+.yellow-card.out-field,
+.red-card.out-field,
+.goal.out-field {
+  opacity: 0;
+  animation-duration: 0.5s;
+  animation-name: hideOut;
+  pointer-events: none;
+}
+
+@keyframes showIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes hideOut {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(30px);
+  }
+}
+#pitch-events {
+  transform: scale(1, -1) !important;
+  position: relative;
+}
+#pitch-events text {
+  /* transform: scale(1, -1); */
+}
+.zones_markers  {
+
+}

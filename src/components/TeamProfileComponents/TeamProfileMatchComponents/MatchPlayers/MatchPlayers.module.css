@@ -1,0 +1,184 @@
+.wrapper {
+  /* position: relative; */
+  width: 100%;
+  /* overflow-x: auto; */
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  background-color: var(--main-whitesmoke);
+  padding: 5px 15px;
+  font-size: 20px;
+  color: black;
+  line-height: 1.2;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.players {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+}
+.playersHeading {
+  background-color: var(--main-light-blue);
+  padding: 5px 50px;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.row {
+  padding: 5px 50px 5px 15px;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #6886bd;
+  background-color: var(--main-sky-blue);
+  color: black;
+}
+.rowLeftStats {
+  z-index: 5;
+  position: sticky;
+  top: 0;
+  left: 0;
+  /* border-right: 1px solid black; */
+  background-color: var(--main-sky-blue);
+}
+.rightStats {
+  padding-left: 75px;
+}
+.rowLeftStats,
+.rowRightStats {
+  padding: 0;
+  padding-left: 20px;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  align-items: center;
+  /* background-color: #1B2436; */
+}
+.rowLeftStats a:hover {
+    text-decoration: underline;
+}
+.leftStats,
+.rightStats,
+.rowLeftStats,
+.rowRightStats {
+  flex: 1;
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  /* font-weight: 600; */
+  align-items: center;
+}
+.leftStats {
+  height: 100%;
+  min-width: 405px;
+  /* position: sticky; */
+  left: 15px;
+  z-index: 5;
+  /* background-color: #435470; */
+}
+.rightStats,
+.rowRightStats {
+  list-style: none;
+  margin: 0;
+}
+.rightStats li,
+.rowRightStats li {
+  /* flex: 1; */
+  width: 55px;
+}
+.statsWrapper {
+  display: flex;
+  position: relative;
+  background-color: #1B2436;
+}
+.teamName {
+  width: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0; 
+}
+
+.text {
+    writing-mode: vertical-rl; 
+    transform: rotate(180deg);
+    letter-spacing: 2px; 
+    font-size: 16px;
+    margin: auto;
+    font-weight: 600;
+  }
+  .modalGear {
+    position: relative;
+    /* max-height: 420px; */
+    overflow: auto;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: #F5F5F5;
+    color: #0F1521;
+    z-index: 100;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+  }
+  .rowLeftStats {
+    max-width: 430px;
+    font-size: 17px;
+  }
+  .confirmBtn {
+    position: sticky;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    font-size: 24px;
+    font-weight: 600;
+    width: 150px;
+    cursor: pointer;
+    padding: 10px 0;
+    background-color: transparent;
+    border: 1px solid #0F1521;
+    color: #0F1521;
+    text-transform: uppercase;
+    padding: 5px 15px;
+  }
+  .links:hover {
+    color: gray;
+  }
+  .headerNav {
+    display: flex;
+    gap: 35px;
+  }
+  .playerBtn {
+    background: inherit;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .modalList {
+    position: relative;
+    display: flex;
+    gap: 50px;
+  }
+  .modalList div {
+    width: 300px;
+    font-size: 17px;
+  }

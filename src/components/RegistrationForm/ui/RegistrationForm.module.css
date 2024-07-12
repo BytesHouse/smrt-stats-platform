@@ -1,0 +1,28 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .formBtnSubmit {
+    font-weight: 500;
+    font-size: 17px;
+    color: #fff;
+    background: #0f1521;
+    box-shadow: inset 4px 1px 30px 9px #1ceb33;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .formBtnSubmit[disabled] {
+    background-color: #adadad;
+    box-shadow: none;
+  }
+  
+  .errorMsg {
+    color: red;
+  }
+  

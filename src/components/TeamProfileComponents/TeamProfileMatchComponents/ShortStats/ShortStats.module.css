@@ -1,0 +1,261 @@
+/* --------- Wrappers ----------- */
+.shortWrapper {
+  margin-top: 15px;
+  display: flex;
+  width: 100%;
+  gap: 15px;
+}
+.teamsWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 100%;
+}
+
+.teamPlayer,
+.events {
+  flex: 1;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+.eventItem {
+  display: flex;
+  align-items: center;
+  padding: 7px 20px;
+  gap: 50px;
+}
+.eventItem:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.eventItem > * {
+  min-width: 120px;
+}
+.teamPlayerTabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  background-color: var(--main-sky-blue);
+  border-bottom: 1px solid black;
+  border-top-left-radius: 10px;
+  /* padding: 5px 15px; */
+  padding-right: 15px;
+}
+.teams,
+.players {
+  cursor: pointer;
+}
+/* --------- xls buttons ----------- */
+.xls {
+  align-self: flex-end;
+  height: 40px;
+  padding: 15px 45px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+.xls:hover {
+  text-decoration: underline;
+}
+.teamsNames {
+  padding: 10px 25px;
+  background-color: var(--main-navy-blue);;
+  display: flex;
+  justify-content: space-between;
+}
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.paramsList {
+  width: 100%;
+  min-height: 320px;
+  position: relative;
+  height: 100% ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+  gap: 10px;
+  list-style: none;
+  background-color: var(--main-sky-blue);
+  color: black;
+  margin: 0;
+  padding: 10px 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.paramsList p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 1px solid gray;
+}
+.paramsList ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.paramsList ul li {
+  margin-bottom: 5px;
+}
+.paramsListEvent {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  background-color: var(--main-sky-blue);
+}
+.paramsListEvent a {
+  margin-bottom: 10px;
+  background-color: var(--main-sky-blue);
+  color: black;
+}
+.paramsListEvent li:last-child {
+  margin-bottom: 0;
+}
+
+.listWrapper {
+  background-color: var(--main-sky-blue);
+  height: 360px;
+  overflow-y: auto;
+}
+.paramsItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.eventsHeading {
+  height: 45px;
+  background-color: var(--main-navy-blue);
+  display: flex;
+  align-items: center;
+  padding: 7px 20px;
+  gap: 50px;
+}
+.eventsHeading > * {
+  min-width: 120px;
+}
+.nodataava {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.134);
+}
+/* -------- Modal Gear --------- */
+.modalGear {
+  position: relative;
+  /* max-height: 420px; */
+  overflow: auto;
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background-color: #F5F5F5;
+  color: #0F1521;
+  z-index: 100;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+
+.teamGearItem {
+  display: flex;
+  gap: 15px;
+}
+.confirmBtn {
+  position: sticky;
+  left: 45%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  font-size: 24px;
+  font-weight: 600;
+  width: 150px;
+  cursor: pointer;
+  padding: 10px 0;
+  background-color: transparent;
+  border: 1px solid #0F1521;
+  color: #0F1521;
+  text-transform: uppercase;
+  padding: 5px 15px;
+}
+.resetBtn {
+  position: sticky;
+  left: 56%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  font-size: 24px;
+  font-weight: 600;
+  width: 150px;
+  cursor: pointer;
+  padding: 10px 0;
+  background-color: transparent;
+  border: 1px solid #0F1521;
+  color: #0F1521;
+  text-transform: uppercase;
+  padding: 5px 15px;
+}
+
+.resetBtnPlayers {
+  position: sticky;
+  bottom: 100px;
+  left: 52%;
+  font-size: 24px;
+  font-weight: 600;
+  width: 150px;
+  cursor: pointer;
+  padding: 10px 0;
+  background-color: transparent;
+  border: 1px solid #0F1521;
+  color: #0F1521;
+  text-transform: uppercase;
+  padding: 5px 15px;
+}
+
+.resetBtnGK {
+  position: sticky;
+  bottom: 217px;
+  left: 52%;
+  font-size: 24px;
+  font-weight: 600;
+  width: 150px;
+  cursor: pointer;
+  padding: 10px 0;
+  background-color: transparent;
+  border: 1px solid #0F1521;
+  color: #0F1521;
+  text-transform: uppercase;
+  padding: 5px 15px;
+}
+.modalList {
+  position: relative;
+  display: flex;
+  gap: 50px;
+}
+.modalList div {
+  width: 300px;
+  font-size: 17px;
+}

@@ -1,0 +1,36 @@
+.matchEventLinks {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  top: 0;
+  text-align: center;
+}
+
+.matchEventLinks a {
+  background-color: #0f1521;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 34px;
+  width: 140px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.matchEventLinks a:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* .matchEventLinks button.tabActive {
+  background-color: #D9B344;
+  border: 1px solid #D9B344;
+  color: #0F1521;
+} */
+
+@media screen and (max-width: 1500px) {
+  .matchEventLinks button {
+    font-size: 15px;
+    width: 130px;
+  }
+}

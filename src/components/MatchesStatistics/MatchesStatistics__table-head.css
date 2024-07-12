@@ -1,0 +1,28 @@
+
+.MatchesStatistics__table-head th:nth-child(1) {
+    width: 40%;
+  }
+  
+  .MatchesStatistics__table-head th:nth-child(2) {
+    width: 15%;
+  }
+  
+  .MatchesStatistics__table-head th:nth-child(3) {
+    width: 10%;
+  }
+  
+  .MatchesStatistics__table-head th:nth-child(4) {
+    width: 10%;
+  }
+
+  .MatchesStatistics__table-head th:nth-child(5) {
+    width: 10%;
+  }
+
+  .MatchesStatistics__table-head th:nth-child(6) {
+    width: 10%;
+  }
+
+  .MatchesStatistics__table-head th:nth-child(7) {
+    width: 5%;
+  }

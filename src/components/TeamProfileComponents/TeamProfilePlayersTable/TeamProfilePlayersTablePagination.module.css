@@ -1,0 +1,18 @@
+.pageList {
+    position: absolute;
+    top: 70px;
+    right: -42px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.page {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 41px;
+    padding: 5px 17px;
+    border-radius: 0px 5px 5px 0px;
+    background: #B4EB54;
+}

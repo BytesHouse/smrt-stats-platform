@@ -1,0 +1,71 @@
+.tableContanier {
+  background-color: #0f1521;
+  border-radius: 0 10px 10px 0;
+  height: calc((100vh - 120px) * var(--scale-multiplier));
+  width: 100%;
+  position: relative;
+  align-self: flex-start;
+}
+
+.tableContanier header {
+  text-align: center;
+  color: var(--main-whitesmoke);
+  background-color: var(--main-navy-blue);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.tableMatchesList {
+  color: #fff;
+  font-weight: 400;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  overflow-y: auto;
+  height: calc((100vh - 175px) * var(--scale-multiplier));
+}
+
+.pageList {
+  position: absolute;
+  top: 70px;
+  right: -45px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.page {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 41px;
+  padding: 5px 17px;
+}
+
+.active {
+  background: #0f1521;
+  border: 1px solid #24f2ff;
+  box-shadow: inset 1px 1px 13px 2px #1774ff;
+  border-radius: 0px 5px 5px 0px;
+  color: #fff;
+}
+
+.settings {
+  position: absolute;
+  right: 28px;
+  top: 12px;
+  cursor: pointer;
+}
+
+.settingsWrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: rgba(3, 3, 3, 0.70);
+  backdrop-filter: blur(5px);
+}

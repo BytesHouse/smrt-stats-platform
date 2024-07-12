@@ -1,0 +1,8 @@
+.PlayerStatisticks__table {
+    background: white;;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    height: 878px;
+    display: flex;
+    flex-direction: column;
+}

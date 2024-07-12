@@ -1,0 +1,86 @@
+.teamProfile {
+    background-color: #0F1521;
+    display: flex;
+}
+
+.orangeBackgroundLeft {
+    height: 899px;
+    width: 736px;
+    background-color: #EC4022;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 20px;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.buttonsContainer {
+    display: flex;
+}
+
+.mathcesButton {
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #EC4022;
+    width: 160px;
+    height: 39px;
+    color: #D9B344;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventsButton {
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #EC4022;
+    width: 160px;
+    height: 39px;
+    color: #D9B344;
+    border-radius: 0px 10px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellowBackgroundRight {
+    width: 1144px;
+    height: 853px;
+    background-color: #D9B344;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.whiteBackground {
+    width: 1124px;
+    height: 802px;
+    background-color: white;
+    border-radius: 0px 10px 10px 10px;
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    background: #0F1521;
+    width: 55vw;
+    align-self: center;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 10px;
+}

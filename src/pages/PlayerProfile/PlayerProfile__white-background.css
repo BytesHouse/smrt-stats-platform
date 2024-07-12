@@ -1,0 +1,8 @@
+.PlayerProfile__white-background {
+    width: 1124px;
+    height: 802px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    top: 20px;
+}

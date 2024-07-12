@@ -1,0 +1,12 @@
+.PlayerProfile__matces-button {
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #FFFFFF;
+    width: 160px;
+    height: 39px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

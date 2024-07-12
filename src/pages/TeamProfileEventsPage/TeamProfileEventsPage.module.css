@@ -1,0 +1,13 @@
+.eventsContainer {
+  width: 100%;
+  color: #fff;
+  background: var(--main-navy-blue);
+  border-radius: 0px 10px 10px 0px;
+  height: calc((100vh - 120px) * var(--scale-multiplier));
+  overflow-y: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}

@@ -1,0 +1,104 @@
+.header {
+  background: var(--main-whitesmoke);
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  gap: 25px;
+  padding: 0 25px 0 25px;
+}
+.logo {
+  background-image: url('../../../public/images/newlogo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 270px;
+}
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.myProfileButton {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 45px;
+  text-align: center;
+  width: 208px;
+  height: 45px;
+  background: var(--main-navy-blue);
+  /* box-shadow: inset 4px 1px 30px 9px #1CEB33; */
+  border-radius: 5px;
+  color: var(--main-whitesmoke);
+  /* border: none; */
+  /* border: 1px solid #b4eb54; */
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.myProfileButton:hover {
+  cursor: pointer;
+  background-color: var(--main-light-blue);
+  color: #000;
+}
+.searchButton {
+  background: var(--main-navy-blue);
+  /* border: 1px solid #b4eb54; */
+  /* box-shadow: inset 1px 1px 22px 4px #1774FF; */
+  border-radius: 5px;
+  /* background-image: url(../../../public/images/glass.svg);  */
+  /* background-position: center;  */
+  /* background-repeat: no-repeat; */
+  /* background-size: 65% 65%; */
+  height: 45px;
+  width: 45px;
+  /* border: none; */
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  cursor: pointer;
+  background-color: var(--main-light-blue);
+}
+.searchButton:hover > svg {
+  fill: #000;
+}
+
+.searchButton > svg {
+  fill: var(--main-whitesmoke);
+  width: 30px;
+  height: 30px;
+  transform: rotate(90deg);
+}
+.exitButton {
+  /* background-image: url(../../../public/images/Button-exit.svg); */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  width: 123px;
+  height: 45px;
+  border-radius: 5px;
+  /* border: none; */
+  background-color: var(--main-navy-blue);
+  /* border: 1px solid #b4eb54; */
+  /* box-shadow: inset -1px 0px 20px 7px #F51A32; */
+  cursor: pointer;
+}
+
+.exitButton:hover {
+  background-color: var(--main-light-blue);
+}
+
+.exitButton:hover > svg {
+  fill: #000;
+}
+
+.exitButton > svg {
+  fill: var(--main-whitesmoke);
+  width: 30px;
+  height: 30px;
+}

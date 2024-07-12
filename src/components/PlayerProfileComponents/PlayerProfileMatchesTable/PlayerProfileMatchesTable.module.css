@@ -1,0 +1,226 @@
+.tableWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.tableContainer {
+  width: 100%;
+  align-self: start;
+  color: var(--main-midnight-blue);
+  background: #0f1521;
+  border-radius: 0px 10px 10px 0px;
+  height: calc((100vh - 120px) * var(--scale-multiplier));
+  overflow-x: auto;
+}
+
+.fix {
+  position: sticky;
+  left: 0px;
+  background-color: var(--main-whitesmoke);
+}
+
+.matchesTable {
+  text-align: center;
+  min-width: 100%;
+  max-width: max-content;
+  width: max-content;
+  font-size: 16px;
+  table-layout: fixed;
+}
+
+.matchesTable thead {
+  font-size: 17px;
+  line-height: 41px;
+  text-transform: uppercase;
+  background-color: var(--main-whitesmoke);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.matchesTable thead tr th:nth-child(n) {
+  padding: 0 5px;
+  font-weight: 500;
+  /* width: 40px; */
+}
+
+.matchesTable thead tr th:nth-child(1) {
+  width: 600px;
+}
+
+.matchesTable thead tr th:nth-child(2) {
+  width: 200px;
+}
+
+.matchesTable thead>tr>th {
+  font-weight: 400;
+}
+
+.matchesTable tbody {
+  vertical-align: baseline;
+}
+
+.matchesTable tbody tr {
+  background-color: var(--main-whitesmoke);
+  vertical-align: middle;
+  height: 60px;
+}
+
+.matchesTable tbody tr td:hover {
+  /* box-shadow: inset 1px 1px 13px 2px #1774ff; */
+  cursor: pointer;
+}
+
+.tableActionBtns {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: var(--main-whitesmoke);
+  position: absolute;
+  right: 77px;
+  top: -50px;
+}
+
+.tableActionBtns>div {
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: var(--main-navy-blue);
+  backdrop-filter: blur(2px);
+  border-radius: 10px 10px 0px 0px;
+  height: 50px;
+  width: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tableActionBtns div.activeBtn {
+  z-index: 2;
+}
+
+.matchSelector {
+  border-radius: 10px 10px 0 0;
+  border: 1px solid var(--main-whitesmoke);
+  background: #F5F5F5;
+  box-shadow: 0px 4px 19px -2px var(--main-whitesmoke) inset;
+  width: 900px;
+  max-height: 730px;
+  position: absolute;
+  right: 538px;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.parametrsSelector {
+  background: #F5F5F5;
+  border: 1px solid var(--main-sky-blue); 
+  /* box-shadow: inset 0px 4px 19px -2px #1774ff; */
+  border-radius: 0 10px 10px 10px;
+  height: calc(100% - 100px);
+  width: calc(100% - 60px);
+  position: absolute;
+  /* right: 30px; */
+  top: 0;
+  z-index: 2;
+  /* display: grid; */
+  /* grid-auto-flow: column; */
+  /* grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 50px; */
+  display: flex;
+  gap: 50px;
+  padding: 20px 40px 20px 20px;
+  /* grid-gap: 20px; */
+  overflow-y: auto;
+}
+
+.parametrsSelector>div {
+  color: #0F1521;
+  display: flex;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: capitalize;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  /* max-width: 200px; */
+}
+
+.btnConfirm {
+  position: fixed;
+  bottom: 100px;
+  right: 50vw;
+  font-size: 24px;
+  font-weight: 600;
+  width: 150px;
+  cursor: pointer;
+  padding: 10px 0;
+  background-color: transparent;
+  border: 1px solid #0F1521;
+  color: #0F1521;
+  text-transform: uppercase;
+  padding: 5px 15px;
+}
+
+@media screen and (max-width: 1500px) {
+  .parametrsSelector {
+    /* grid-auto-flow: row;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr); */
+  }
+}
+
+.matchOptionsWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #FFF;
+  overflow-y: auto;
+  background: #0F1521;
+  box-shadow: 0 4px 19px -2px var(--main-whitesmoke) inset;
+}
+
+.matchOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 58px;
+  line-height: 58px;
+  padding-left: 40px;
+}
+
+.team_matchesSettings {
+  position: relative !important;
+  border: none !important;
+  background: none !important;
+  max-width: 100% !important;
+}
+@media screen and (max-width: 1200px) {
+  .parametrsSelector {
+    /* grid-template-columns: repeat(3, 1fr); */
+  }
+}
+
+.btnReset {
+  position: fixed;
+  bottom: 100px;
+  right: 40vw;
+  font-size: 24px;
+  font-weight: 600;
+  width: 150px;
+  cursor: pointer;
+  padding: 10px 0;
+  background-color: transparent;
+  border: 1px solid #0F1521;
+  color: #0F1521;
+  text-transform: uppercase;
+  padding: 5px 15px;
+}

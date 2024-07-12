@@ -1,0 +1,12 @@
+.MatchesPopup__container {
+    height: 382px;
+    width: 585px;
+    background: #0F1521;
+    border: 1px solid #1772B2;
+    box-shadow: inset 0px 4px 19px -2px #1774ff;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 3;
+    position: relative;
+    top: -40px;
+    right: 165px;
+}

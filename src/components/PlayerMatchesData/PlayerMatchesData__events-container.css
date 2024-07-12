@@ -1,0 +1,6 @@
+.PlayerMatchesData__events-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    align-items: center;
+}

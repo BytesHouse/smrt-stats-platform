@@ -1,0 +1,5 @@
+.ProfileMenu__container {
+    display: flex;
+    gap: 21px;
+    margin-left: 5px;
+}

@@ -1,0 +1,106 @@
+.pageContainer {
+  width: calc(100% - 80px);
+  height: 100%;
+  background-color: #2b333d;
+  color: #fff;
+  position: relative;
+}
+
+.pageContainer > h3 {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 20px;
+  width: calc(100% - 40px);
+  background-color: var(--main-navy-blue);
+  box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.pageContainer > p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  width: calc(100% - 40px);
+}
+
+.playersTablesContainer {
+  /* width: calc(100% - 270px); */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  /* padding: 0 10px; */
+  overflow-y: auto;
+  height: calc(100% - 150px);
+  background-color: var(--main-light-blue)
+}
+
+.pageTabs {
+  font-weight: 500;
+  font-size: 17px;
+  position: absolute;
+  display: flex;
+  gap: 3px;
+  color: #fff;
+  right: 22px;
+  top: -52px;
+}
+
+.pageTabs > div,
+.pageTabs > a {
+  background-color: var(--main-navy-blue);
+  border: 1px solid #ffffff;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1900px) {
+  .playersTablesContainer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .pageTabs > div,
+  .pageTabs > a {
+    width: 130px;
+    height: 35px;
+    font-size: 15px;
+  }
+  .pageTabs {
+    right: 30px;
+    top: -37px;
+  }
+}
+.xls {
+  position: absolute;
+  right: -15px;
+  bottom: -20px;
+  height: 40px;
+  padding: 15px 45px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+}
+.xls:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

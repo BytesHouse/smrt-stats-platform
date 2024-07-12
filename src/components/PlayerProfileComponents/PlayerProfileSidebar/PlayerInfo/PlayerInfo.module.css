@@ -1,0 +1,176 @@
+.playerInfoContainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.statheader {
+  padding: 15px 0px 10px 1px;
+  font-size: 20px;
+  font-weight: 500;
+  border-top-right-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.statheader > span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-whitesmoke)
+}
+
+.playerSeasonSelect {
+  border: 0.1px solid #000000;
+  border-radius: 5px;
+  height: 30px;
+  width: 133px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.teamInfoContainer {
+  background-color: var(--main-navy-blue);
+  padding: 15px;
+  border-radius: 10px;
+  color: var(--main-whitesmoke);
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teamInfoContainer img {
+  width: 200px;
+  height: 210px;
+  object-fit: contain;
+}
+
+.playerLogos {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: relative;
+}
+
+.playerLogos img:first-child {
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+  aspect-ratio: 3/2;
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+}
+
+.playerLogos img:nth-child(2) {
+  width: 136px;
+  height: 160px;
+  object-fit: contain;
+}
+
+.teamInfoContainer h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin: 5px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 41px;
+}
+
+.teamInfoContainer h3 > span {
+  text-wrap: nowrap;
+  max-width: 240px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.teamInfoContainer h3::before {
+  content: '';
+  background: grey;
+  height: 1px;
+  width: 50%;
+  margin: 10px 0;
+}
+
+.teamInfoContainer h4 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.teamInfoContainer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: calc(100vh - 650px);
+  overflow-y: auto;
+}
+
+.teamInfoContainer ul > li {
+  max-width: 260px;
+}
+
+li.underline {
+  border-bottom: 1px solid #fff;
+}
+.favWrapper {
+  position: relative;
+  margin-top: -25px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+}
+.favoritesIcon {
+  align-self: flex-end;
+  position: relative;
+  z-index: 1;
+  top: 25px;
+  right: -5px;
+  cursor: pointer;
+}
+.tooltip {
+  position: absolute;
+  z-index: 0;
+  border: 1px solid white;
+  padding: 13px 30px;
+  border-radius: 9px;
+  height: 0;
+  opacity: 0; /* Изначально элемент полностью прозрачен */
+  visibility: hidden; /* Изначально элемент невидим */
+  transform: translateY(-10px); /* Изначально элемент сдвинут вверх на 10px */
+  transition: opacity 0.3s ease, visibility 0s, transform 0.5s ease;
+  background-color: black;
+  top: 50px;
+}
+.favoritesIcon:hover + .tooltip {
+  opacity: 1; /* Элемент непрозрачен */
+  visibility: visible; /* Элемент видим */
+  transform: translateY(0);
+  height: inherit;
+}
+.tooltip:hover {
+  opacity: 1; /* Элемент непрозрачен */
+  visibility: visible; /* Элемент видим */
+  transform: translateY(0);
+  height: inherit;
+}

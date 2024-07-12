@@ -1,0 +1,87 @@
+.container {
+  position: relative;
+  background: var(--main-gray);
+  border-radius: 10px;
+  padding: 20px 10px 10px 10px;
+  width: 100%;
+  max-width: 518px;
+  height: calc(100% - 100px);
+  color: #fff;
+}
+
+.container header {
+  color: var(--main-midnight-blue);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-left: 12px;
+  height: 42px;
+}
+
+.settings {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1700px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+.settingsform {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.settingsform_footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.settingsform label {
+  min-width: 50%;
+}
+
+.settingsform__item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.datepicker input[type="text"] {
+  max-width: 100px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 20px;
+  border: 1px solid #FFF;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  /*background: url("images/down-arrow.svg") no-repeat center right 0.75rem;*/
+}
+.settingsform button {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  width: 152px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #0F1521;
+  color: #0F1521;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}

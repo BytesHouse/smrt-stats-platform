@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Hind Jalandhar';
+    font-display: swap;
+    font-style:  normal;
+    font-weight: 400;
+    src: url("../Hind-Jalandhar/Hind Jalandhar.ttf") format("truetype"),
+         url("../Hind-Jalandhar/Hind Jalandhar.woff") format("woff"),
+         url("../Hind-Jalandhar/Hind Jalandhar.woff2") format("woff2");
+  }
+
+  @font-face {
+     font-family: 'Hind Jalandhar';
+     font-display: swap;
+     font-style:  normal;
+     font-weight: 300;
+     src: url("../Hind-Jalandhar/Hind Jalandhar Light.ttf") format("truetype"),
+          url("../Hind-Jalandhar/Hind Jalandhar Light.woff") format("woff"),
+          url("../Hind-Jalandhar/Hind Jalandhar Light.woff2") format("woff2");
+   }
+
+   @font-face {
+    font-family: 'Hind Jalandhar';
+    font-display: swap;
+    font-style:  normal;
+    font-weight: bold;
+    src: url("../Hind-Jalandhar/Hind Jalandhar Bold.ttf") format("truetype"),
+         url("../Hind-Jalandhar/Hind Jalandhar Bold.woff") format("woff"),
+         url("../Hind-Jalandhar/Hind Jalandhar Bold.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: 'Hind Jalandhar';
+    font-display: swap;
+    font-style:  normal;
+    font-weight: 500;
+    src: url("../Hind-Jalandhar/Hind Jalandhar Medium.ttf") format("truetype"),
+         url("../Hind-Jalandhar/Hind Jalandhar Medium.woff") format("woff"),
+         url("../Hind-Jalandhar/Hind Jalandhar Medium.woff2") format("woff2");
+  }

@@ -1,0 +1,15 @@
+.MatchesData__table-row {
+    border: 1px solid white;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 48px;
+}
+
+.MatchesData__table-row:hover {
+    background: rgba(34, 231, 133, 0.3);
+}

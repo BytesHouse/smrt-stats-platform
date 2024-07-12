@@ -1,0 +1,66 @@
+.profilePageThemeSwithcer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.profilePageThemeSwithcer>b {
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+}
+
+.profilePageThemeSwithcer>div {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.profilePageThemeSwithcer>div>img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* .profilePageThemeSwithcer>div>img:first-child {
+    box-shadow: inset 5px 4px 26px 5px #B4EB54;
+} */
+
+.profilePageThemeSwithcer>div>img:last-child {
+    background-color: #fff;
+}
+.switch {
+    display: flex;
+    gap: 15px;
+    color: #fff;
+    align-items: center;
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+.switch::before {
+    content: '';
+    height: 1em;
+    width: 2em;
+    border-radius: 1em;
+    background-color: var(--main-whitesmoke);
+    transition: background-color 250ms ease-in-out, transform 350ms ease-in-out;
+}
+.switch::after {
+    content: '';
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 1em;
+    background-color: var(--main-midnight-blue);
+    position: absolute;
+    left: 0.2em;
+}
+.toggler:checked + .switch::after {
+    transform: translateX(100%);
+}
+.toggler {
+    visibility: hidden;
+}

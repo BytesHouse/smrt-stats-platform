@@ -1,0 +1,560 @@
+.video-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+.video-container.full-screen {
+  max-width: initial;
+  width: 100%;
+}
+
+.video-container.full-screen {
+  max-height: calc(100vh * var(--scale-multiplier));
+}
+
+video {
+  width: 100%;
+  max-height: calc((100vh - 200px) * var(--scale-multiplier));
+  border-radius: 10px;
+  background: #000;
+  /* box-shadow: 0px 2px 9px 6px rgba(23, 116, 255, 0.7); */
+}
+
+.video-controls-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+.video-controls-container::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+  width: 100%;
+  aspect-ratio: 6 / 1;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.video-container:hover .video-controls-container,
+.video-container:focus-within .video-controls-container,
+.video-container.paused .video-controls-container {
+  opacity: 1;
+}
+
+.video-controls-container .controls {
+  display: flex;
+  gap: 0.5rem;
+  padding: 10px 30px 10px 10px;
+  align-items: center;
+}
+
+.video-controls-container .controls button {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0;
+  min-height: 30px;
+  min-width: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 150ms ease-in-out;
+}
+
+.video-controls-container .controls button:hover {
+  opacity: 1;
+}
+
+.video-container.paused .pause-icon {
+  display: none;
+}
+
+.video-container:not(.paused) .play-icon {
+  display: none;
+}
+
+.video-container.full-screen .open {
+  display: none;
+}
+
+.video-container:not(.full-screen) .close {
+  display: none;
+}
+
+.volume-high-icon,
+.volume-low-icon,
+.volume-muted-icon {
+  display: none;
+}
+
+.video-container[data-volume-level='high'] .volume-high-icon {
+  display: block;
+}
+
+.video-container[data-volume-level='low'] .volume-low-icon {
+  display: block;
+}
+
+.video-container[data-volume-level='muted'] .volume-muted-icon {
+  display: block;
+}
+
+.volume-container {
+  display: flex;
+  align-items: center;
+}
+
+.volume-slider {
+  width: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: width 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.volume-container:hover .volume-slider,
+.volume-slider:focus-within {
+  width: 100px;
+  transform: scaleX(1);
+}
+
+.duration-container {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-grow: 1;
+}
+
+.timeline-container {
+  height: 7px;
+  margin-inline: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.timeline {
+  background-color: rgba(100, 100, 100, 0.5);
+  height: 3px;
+  width: 100%;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: calc(100% - var(--preview-position) * 100%);
+  background-color: rgb(150, 150, 150);
+  display: none;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: calc(100% - var(--progress-position) * 100%);
+  background: var(--main-midnight-blue);
+  box-shadow: inset -10px 1px 5px 0.5px var(--main-midnight-blue);
+}
+
+.timeline .thumb-indicator {
+  --scale: 0;
+  position: absolute;
+  transform: translateX(-50%) scale(var(--scale));
+  height: 200%;
+  top: -50%;
+  left: calc(var(--progress-position) * 100%);
+  background: var(--main-midnight-blue);
+  box-shadow: inset -10px 1px 5px 0.5px var(--main-midnight-blue);
+  border-radius: 50%;
+  transition: transform 150ms ease-in-out;
+  aspect-ratio: 1 / 1;
+}
+
+.record-point {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  top: 10px;
+  left: calc(var(--progress-position) * 100%);
+}
+
+.record-point__time {
+  text-align: center;
+  color: #c21515;
+}
+
+.record-point__timeline {
+  z-index: 101;
+  background-color: #fff;
+  height: 3px;
+  width: 100%;
+  position: relative;
+}
+
+.video-container.scrubbing .thumbnail-img {
+  display: block;
+}
+
+.video-container.scrubbing .timeline::before,
+.timeline-container:hover .timeline::before {
+  display: block;
+}
+
+.video-container.scrubbing .thumb-indicator,
+.timeline-container:hover .thumb-indicator {
+  --scale: 1;
+}
+
+.video-container.scrubbing .timeline,
+.timeline-container:hover .timeline {
+  height: 100%;
+}
+
+button.full-screen-btn {
+  border: 0.5px solid #00ff47 !important;
+  border-radius: 5px;
+  color: #00ff47 !important;
+  display: flex;
+  align-items: center;
+  padding: 0 15px !important;
+  line-height: initial;
+}
+
+button.full-screen-btn:hover {
+  box-shadow: inset 1px 0px 9px 1px #00ff47;
+}
+
+button.full-screen-btn > svg {
+  width: 30px;
+}
+
+.paused-overlay.active {
+  display: block;
+}
+
+.paused-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  border-radius: 10px;
+}
+
+.paused-overlay > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.current-time {
+  color: #ffffff;
+  padding-left: 40px;
+  padding-bottom: 5px;
+}
+
+.playlist-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 30px;
+}
+
+.full-screen video {
+  max-height: 100%;
+  border-radius: 0;
+}
+
+.video-settings {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background: rgba(15, 21, 33, 0.5);
+  /* box-shadow: inset -1px -1px 12px #b4eb54; */
+  border-radius: 10px;
+  width: 47px;
+  height: 47px;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.video-settings:hover {
+  cursor: pointer;
+  box-shadow: inset 1px 1px 13px 2px #1774ff;
+}
+
+.video-settings > svg {
+  fill: #ffffff;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.video-settings.opened {
+  width: 190px;
+  min-height: 300px;
+  padding: 15px;
+}
+
+.video-settings__actions {
+  animation-name: showSmooth;
+  animation-duration: 2s;
+}
+
+.video-settings__btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.video-settings__btn-quality {
+  width: 60px;
+  height: 60px;
+  background: rgba(15, 21, 33, 0.5);
+  box-shadow: inset -1px -1px 12px #1774ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+.video-settings__btn-quality:hover {
+  cursor: pointer;
+  box-shadow: inset 1px 1px 13px 2px #1774ff;
+}
+
+.video-settings__btn-quality.active {
+  background: rgba(23, 116, 255, 0.5);
+  box-shadow: inset -1px -1px 12px #1774ff;
+}
+
+.video-settings__btn-save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 26px;
+  background: rgba(15, 21, 33, 0.5);
+  box-shadow: inset -1px -1px 12px #1774ff;
+  border-radius: 5px;
+  margin: 15px auto;
+  font-weight: 400;
+  color: white;
+  font-size: 16px;
+}
+
+.video-settings__btn-save:hover {
+  cursor: pointer;
+  box-shadow: inset 1px 1px 13px 2px #1774ff;
+}
+
+.video-settings__btn-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 105px;
+  height: 26px;
+  background: rgba(15, 21, 33, 0.5);
+  box-shadow: inset -1px -1px 12px #1774ff;
+  border-radius: 5px;
+  margin: 15px auto;
+
+  font-weight: 400;
+  color: white;
+  font-size: 16px;
+}
+
+.video-settings__btn-download:hover {
+  cursor: pointer;
+  box-shadow: inset 1px 1px 13px 2px #1774ff;
+}
+
+.video-volume__icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-volume-slider_container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  animation-name: showSmooth;
+  animation-duration: 2s;
+  color: white;
+}
+
+.video-volume-slider_container svg {
+  fill: #fff;
+  width: 15px;
+  height: 15px;
+}
+
+.video-volume-slider_container svg:first-child {
+}
+
+.video-volume-slider_container svg:last-child {
+}
+
+@keyframes showSmooth {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.spinner {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  display: none;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #ffffff;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  z-index: 999;
+  animation: rotate linear 2s infinite;
+  animation-delay: 0ms;
+}
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.video-settings__empty-block {
+  color: white;
+  white-space: break-spaces;
+  text-align: center;
+  padding: 70px 0 30px 0;
+}
+
+.player-play-button {
+  padding: 23px 12px;
+  cursor: pointer;
+  box-sizing: border-box;
+  max-height: 39px;
+}
+
+.player-pause-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 47px;
+  box-sizing: border-box;
+  /* border: 1px solid white; */
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+}
+
+.player-control-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 47px;
+  cursor: pointer;
+}
+
+.controls__main {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.controls__main > div {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.controls__main-rewind {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.controls__main-rewind--left {
+  padding: 18px 12px;
+  display: flex;
+  align-items: center;
+  transform: rotateY(360deg);
+}
+
+.controls__main-rewind--right {
+  padding: 18px 12px;
+  transform: rotateY(180deg);
+}
+
+.video-speed-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+  gap: 10px;
+}
+
+.controls__left {
+  display: flex;
+  gap: 50px;
+}
+
+.controls__left-record-btn {
+  margin-top: 5px;
+}
+
+.controls__left-screenshot-btn {
+  margin-top: 5px;
+}
+
+.controls__right {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.controls button .controls__record {
+  color: red;
+}
+
+.player-notification {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.add_playlist {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}

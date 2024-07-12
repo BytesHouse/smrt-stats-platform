@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  color: #fff;
+  font-weight: 300;
+  font-size: 17px;
+  height: 100%;
+  max-height: 50px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  /* top: -5px; */
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: var(--main-whitesmoke);
+  border: 0.5px solid var(--main-midnight-blue);
+  border-radius: 3px;
+}
+
+.container:hover input ~ .checkmark {
+  /* box-shadow: inset -3px 4px 7px #1DFF33; */
+  /* При наведении на чекбокс не должно быть заливки */
+  /* box-shadow: inset -3px 4px 7px #B4EB54; */
+}
+
+.container input:checked ~ .checkmark {
+  /* box-shadow: inset -3px 4px 7px #1DFF33; */
+  /* box-shadow: inset -3px 4px 7px #B4EB54; */
+  background-color: #0F1521;
+  border: none;
+}
+
+/* 
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+} */

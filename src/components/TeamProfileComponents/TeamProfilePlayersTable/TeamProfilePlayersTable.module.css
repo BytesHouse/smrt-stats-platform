@@ -1,0 +1,30 @@
+.tableContanier {
+  background-color: #0f1521;
+  border-radius: 10px;
+  height: calc((100vh - 120px) * var(--scale-multiplier));
+  width: 100%;
+  /* width: calc(100vw - 463px); */
+  /* margin: 0 auto; */
+  position: relative;
+}
+
+.tableContanier header {
+  text-align: center;
+  background-color: var(--main-navy-blue);
+  color: var(--main-whitesmoke);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.tablePlayersList {
+  color: #fff;
+  font-weight: 400;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  overflow-y: auto;
+  height: calc((100vh - 200px) * var(--scale-multiplier));
+}

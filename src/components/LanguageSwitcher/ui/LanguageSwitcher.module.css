@@ -1,0 +1,113 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    border: 1px solid var(--main-navy-blue);
+    border-radius: 10px;
+    width: 250px;
+    min-height: 55px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: var(--main-whitesmoke);
+}
+
+.containerProfile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 350px;
+    background-color: var(--main-whitesmoke);
+    border: 1px solid var(--main-navy-blue);
+    border-radius: 10px;
+    min-height: 40px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: var(--main-whitesmoke);
+}
+
+.containerLight {
+    background-color: #EBF1FF;
+}
+
+.button {
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    width: max-content;
+
+}
+
+.spanLight {
+    color: black;
+}
+
+.eng {
+    background-color: transparent;
+    color: var(--main-navy-blue);
+}
+
+.es {
+    background-color: transparent;
+    color: var(--main-navy-blue);
+}
+
+.buttonContainer {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    gap: 25px;
+}
+
+.buttonContainer > svg > path {
+    fill: var(--main-navy-blue);
+}
+
+.spainFlag {
+    background-image: url(../../../../public/images/spain-flag.png);
+    width: 80px;
+    height: 34px;
+    background-size: cover;
+}
+
+.americanFlag {
+    background-image: url(../../../../public/images/american-flag.png);
+    width: 56px;
+    height: 34px;
+    background-size: cover;
+}
+
+.languageSwitcherDropDown {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 450px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.languageSwitcherDropDownProfile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 190px;
+    overflow-y: scroll;
+}

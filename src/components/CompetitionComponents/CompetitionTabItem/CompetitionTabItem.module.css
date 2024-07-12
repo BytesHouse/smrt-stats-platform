@@ -1,0 +1,46 @@
+.article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(29, 38, 56, 0.6);
+}
+
+.article:hover {
+    box-shadow: inset -3px 0px 21px #B4EB54, inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.flag {
+    width: 30px;
+    height: 100px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 41px;
+    text-align: center;
+    color: white;
+    margin-left: 57px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    background-image: url(../../../../public/images/arrow-big-match.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 38px;
+    width: 38px;
+    border: none;
+    background-color: unset;
+    margin-right: 49px;
+    cursor: pointer;
+}

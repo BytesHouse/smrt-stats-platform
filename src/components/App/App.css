@@ -1,0 +1,22 @@
+.App {
+  background-color: var(--main-whitesmoke);
+  overflow: hidden;
+  min-height: 100vh;
+  height: calc(100vh * var(--scale-multiplier));
+}
+
+/* .circle-event:hover {
+  cursor: pointer;
+  fill: #ffe400 !important;
+} */
+
+circle.tactic:hover {
+  cursor: pointer;
+  fill: #ccca51 !important;
+}
+
+@media screen and (max-width: 1700px) {
+  #pitch-events {
+    /* width: 35vw !important; */
+  }
+}

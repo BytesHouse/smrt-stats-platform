@@ -1,0 +1,139 @@
+.FavoritesContainer {
+  height: calc((100vh - 170px) * var(--scale-multiplier));
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.playlistEmpty {
+  background: #0f1521;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: calc((100vh - 170px) * var(--scale-multiplier));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.playlistItem {
+  background: var(--main-gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px 10px 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--main-midnight-blue);
+  cursor: pointer;
+}
+
+.playlistItem:hover {
+  background: var(--main-whitesmoke);
+}
+
+/* .favoritesItemLeftContent:hover,
+  .favoritesCentralContent:hover {
+    color: #2b74e1;
+  }
+  
+  .playlistItem:hover>.favoritesItemLeftContent>svg>path {
+    stroke: #2b74e1;
+  } */
+
+.favoritesItemLeftContent,
+.favoritesCentralContent {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: clamp(320px, 33.3%, 768px);
+}
+
+.favoritesItemLeftContent img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.favoritesCentralContent img {
+  width: 40px;
+  height: 40px;
+}
+
+.playlistItemRightConent {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.playlistItemRightConent>svg {
+  width: 25px;
+}
+
+.playlistItemRightConent>svg>path {
+  stroke: var(--main-midnight-blue);
+}
+
+.playlistItemEvent {
+  background: #18243d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px 10px 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #18243d;
+  margin-bottom: 5px;
+}
+
+.playlistItemEvent:hover {
+  border: 1px solid #5f78ff;
+  box-shadow: inset -2px 1px 20px 6px #1774ff;
+}
+
+.playlistItemEventLeftContent {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.playlistItemEventRightContent {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.playlistItemEventRightContent>svg {
+  width: 25px;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.playlist {
+  color: white;
+  font-size: 42px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

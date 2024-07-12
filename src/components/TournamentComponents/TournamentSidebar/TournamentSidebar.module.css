@@ -1,0 +1,37 @@
+.sidebarContanier {
+  display: flex;
+  border-radius: 10px 10px 0px 0px;
+  height: calc((100vh - 105px) * var(--scale-multiplier));
+  transition: all ease-in-out 0.1s;
+  padding: 20px 60px 20px 20px;
+  position: relative;
+  background: var(--main-midnight-blue);
+}
+
+.sidebarContanier.disclosed {
+  /* width: 100%; */
+  max-width: 770px;
+}
+
+.discloseBtn {
+  width: 60px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: right;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.discloseBtn:hover {
+  background-color: #00000017;
+}
+
+.discloseBtn svg {
+  fill: #fff;
+  width: 40px;
+  height: 40px;
+}

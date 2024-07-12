@@ -1,0 +1,12 @@
+.PlayerStatisticks__caption {
+    background-color: white;
+    height: 50px;
+    border-radius: 0px 10px 10px 10px;
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 55px;
+    text-align: center;
+    color: black;
+}

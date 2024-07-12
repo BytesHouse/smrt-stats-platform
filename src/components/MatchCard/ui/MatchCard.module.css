@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background: #E2E2E2;
+    margin-bottom: 5px;
+}
+
+.teamName {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    margin: 0px auto;
+}
+
+.score {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    margin: 0px auto;
+}
+
+.bottomContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    margin: 0px auto;
+}
+
+.competition {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    margin: 0px auto;
+}
+
+.buttonContainer {
+    display: flex;
+    align-self: center;
+}
+
+.button {
+    width: 90px;
+    height: 60px;
+    background: #E2E2E2;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 0px 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+}

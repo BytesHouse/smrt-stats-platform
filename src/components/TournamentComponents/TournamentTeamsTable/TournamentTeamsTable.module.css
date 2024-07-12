@@ -1,0 +1,45 @@
+.tableContainer {
+  min-height: 100%;
+  width: 100%;
+  color: #fff;
+  background: #0f1521;
+  border-radius: 0px 10px 10px 0px;
+  height: calc(100vh - 250px);
+  overflow-x: auto;
+}
+
+.teamsTable {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  table-layout: fixed;
+}
+
+.teamContainer {
+  display: flex;
+  background-color: var(--main-navy-blue);
+  height: 40px;
+}
+
+.teamContainer:hover {
+  background-color: var(--main-light-blue);
+  cursor: pointer;
+}
+
+.teamLogo {
+  width: 30px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.teamName {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.teamNameLink {
+  text-decoration: none;
+}

@@ -1,0 +1,73 @@
+.pitchContainer {
+  max-width: calc(53vw * var(--scale-multiplier));
+  width: 100%;
+  position: relative;
+  align-self: start;
+  margin-top: 20px;
+}
+
+.pitchContainer img {
+  width: 100%;
+  height: calc(100vh - 400px);
+}
+
+.pitchTabs {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  gap: 5px;
+  bottom: -46px;
+  left: 20px;
+}
+
+.pitchTabs > div {
+  padding: 10px 5px;
+  background: #2e7b1a;
+  box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 10px 10px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.pitchTabs > div.active {
+  background: #b4eb54;
+  color: #000;
+}
+
+.downloadBtn {
+  position: absolute;
+  bottom: -46px;
+  right: 10px;
+  padding: 10px;
+  background: #2e7b1a;
+  box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 10px 10px;
+  width: 150px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.downloadBtn:hover {
+  background: #b4eb54;
+  color: #000;
+}
+
+@media screen and (max-width: 1700px) {
+  .pitchTabs > div {
+    font-size: 10px;
+  }
+
+  .downloadBtn {
+    font-size: 10px;
+  }
+}

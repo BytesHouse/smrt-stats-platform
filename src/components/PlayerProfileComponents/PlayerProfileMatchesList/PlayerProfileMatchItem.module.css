@@ -1,0 +1,83 @@
+.matchItemWrapper {
+  border-bottom: 2px solid #ffffff1f;
+  background-color: var(--main-whitesmoke);
+  color: var(--main-midnight-blue);
+}
+
+.matchItemWrapper:hover {
+  background-color: var(--main-light-blue);
+  color: #000;
+}
+
+.matchItemWrapper:hover svg {
+  fill: var(--main-whitesmoke);
+}
+
+.matchItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.matchItem:hover {
+  cursor: pointer;
+}
+
+.matchItem img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  /* border: 1px solid #fff; */
+}
+
+.matchItemLogos {
+  display: flex;
+  align-items: center;
+}
+
+.matchItemLogos > span {
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.matchItem svg {
+  fill: var(--main-midnight-blue);
+  padding-right: 20px;
+}
+
+.matchItemActionBtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cce4f1;
+  padding: 15px 5px;
+}
+
+.matchItemActionBtns > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.matchItemActionBtns > div > button:first-child {
+  margin-right: 10px;
+}
+
+.matchItemActionBtns button {
+  background: var(--main-whitesmoke);
+  border: 1px solid var(--main-midnight-blue);
+  border-radius: 5px;
+  color: #0f1521;
+  font-weight: 400;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33px;
+  min-width: 108px;
+  padding: 5px 15px;
+  cursor: pointer;
+}

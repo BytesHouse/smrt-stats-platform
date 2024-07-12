@@ -1,0 +1,23 @@
+.matchEventLinks {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  text-align: center;
+  position: relative;
+}
+
+.matchEventLinks a {
+  background-color: #0f1521;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 34px;
+  width: 140px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.matchEventLinks a:last-child {
+  border-top-right-radius: 10px;
+}

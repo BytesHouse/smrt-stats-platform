@@ -1,0 +1,27 @@
+.contentCard {
+  border-radius: 0 10px 10px 0px;
+  width: calc(100% - 270px);
+  height: calc((100vh - 110px) * var(--scale-multiplier));
+  align-self: end;
+  position: relative;
+  padding: 0px 20px 20px 0;
+  /* background: linear-gradient(
+    185.56deg,
+    #3f3f3f 4.43%,
+    rgba(253, 253, 253, 0.541667) 47.64%,
+    rgba(197, 162, 110, 0) 98.7%
+  ); */
+  /* overflow: hidden; */
+}
+
+.contentPage {
+  width: 100%;
+  background-color: #0F1521;
+  height: calc((100vh - 120px) * var(--scale-multiplier));
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+}

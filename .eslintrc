@@ -1,0 +1,124 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "react-app"
+  ],
+  "plugins": [
+    "sort-destructure-keys",
+    "typescript-sort-keys",
+    "postro4no",
+    "sort-keys-fix"
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "warn",
+    "sort-keys-fix/sort-keys-fix": "warn",
+    "@typescript-eslint/array-type": [
+      "warn",
+      {
+        "default": "generic"
+      }
+    ],
+    "@typescript-eslint/indent": ["warn", 2],
+    "@typescript-eslint/member-delimiter-style": [
+      "warn",
+      {
+        "multiline": {
+          "delimiter": "comma",
+          "requireLast": true
+        },
+        "singleline": {
+          "delimiter": "comma",
+          "requireLast": false
+        }
+      }
+    ],
+    "@typescript-eslint/no-shadow": "warn",
+    "import/extensions": [
+      "warn",
+      "never",
+      {
+        "svg": "always",
+        "css": "always",
+        "scss": "always"
+      }
+    ],
+    "import/no-duplicates": "warn",
+    "import/no-extraneous-dependencies": [
+      "warn",
+      {
+        "devDependencies": ["src/setupTests.ts", "src/**/stories.tsx"]
+      }
+    ],
+    "jsx-quotes": ["warn", "prefer-single"],
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/aria-role": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "no-param-reassign": [
+      "warn",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": ["self", "acc", "state"]
+      }
+    ],
+    "postro4no/function-args": "warn",
+    "postro4no/import": "warn",
+    "postro4no/object-props": "warn",
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [".tsx", ".jsx"]
+      }
+    ],
+    "react/jsx-indent": ["warn", 2],
+    "comma-dangle": [2, "always-multiline"],
+    "sort-destructure-keys/sort-destructure-keys": [
+      1,
+      {
+        "caseSensitive": false
+      }
+    ],
+    "typescript-sort-keys/interface": 1,
+    "typescript-sort-keys/string-enum": 1,
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/jsx-no-useless-fragment": [
+      2,
+      {
+        "allowExpressions": true
+      }
+    ],
+    "react/jsx-wrap-multilines": [
+      "error",
+      { "declaration": false, "assignment": false }
+    ],
+    "camelcase": "off",
+    "default-param-last": 0,
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "no-plusplus": "off",
+    "no-shadow": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "off",
+    "react/jsx-fragments": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
+    "semi": "off",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
+    ],
+    "linebreak-style": "off",
+    "operator-linebreak": "off"
+  }
+}

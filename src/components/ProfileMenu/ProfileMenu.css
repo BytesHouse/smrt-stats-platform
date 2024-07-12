@@ -1,0 +1,7 @@
+.ProfileMenu {
+    display: flex;
+    justify-content: space-between;
+    background: #192438;
+    height: 60px;
+    align-items: center;
+}

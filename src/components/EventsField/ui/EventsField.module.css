@@ -1,0 +1,9 @@
+.eventsField {
+    background-image: url(../../../../public/images/field.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 623px;
+    width: 40vw;
+    margin-left: 57px;
+}

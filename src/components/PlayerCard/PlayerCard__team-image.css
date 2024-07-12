@@ -1,0 +1,6 @@
+.PlayerCard__team-image {
+    height: 180px;
+    width: 180px;
+    border: 1px solid white;
+    margin-left: 5px;
+}

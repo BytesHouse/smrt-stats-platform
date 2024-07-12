@@ -1,0 +1,8 @@
+.PlayerCard__player-image {
+    width: 236px;
+    height: 236px;
+    background-position: center;
+    border: 1px solid white;
+    margin-left: 5px;
+    object-fit: contain;
+}

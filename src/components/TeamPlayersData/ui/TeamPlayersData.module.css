@@ -1,0 +1,81 @@
+.teamPlayersData {
+    display: flex;
+    width: 55vw;
+    height: 64px;
+    background-color: #171F2F;
+    align-self: center;
+}
+
+.teamPlayersData:hover {
+    box-shadow: inset -4px 8px 10px -3px #EC4022, inset 7px -11px 29px -6px #FFE70C;
+}
+
+.flagImg {
+    height: 65px;
+    width: 41px;
+}
+
+.playerImg {
+    height: 65px;
+    width: 41px;
+}
+
+.playerName {
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-left: 12px;
+}
+
+.playerAgeTitle {
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-left: 270px;
+}
+
+.playerAge {
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.playerPositionTitle {
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-left: 260px;
+}
+
+.playerPosition {
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-left: 20px;
+}

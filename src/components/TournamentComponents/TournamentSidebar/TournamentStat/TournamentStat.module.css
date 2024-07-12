@@ -1,0 +1,67 @@
+.statistic {
+  display: none;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+  height: 100%;
+  background-color: #e2e2e2;
+  border-radius: 0 10px 10px 0;
+}
+
+.statistic.show {
+  display: block;
+  opacity: 1;
+}
+
+.statheader {
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  border-top-right-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background: #252525;
+  box-shadow: inset -2px 3px 4px rgba(0, 0, 0, 0.7);
+  color: var(--main-whitesmoke);
+}
+
+.statheader > span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.statheader > select {
+  background: var(--main-whitesmoke);
+  border: 0.1px solid #000000;
+  border-radius: 5px;
+  height: 30px;
+  width: 133px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.listMatches {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh + 105px);
+  position: relative;
+}
+
+.listMatches b {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,9 @@
+.PlayerStatisticks__table-body-item {
+    
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 26px;
+    border-bottom: 1px solid black;
+    width: 180px;
+}

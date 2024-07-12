@@ -1,0 +1,51 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.pagebtn {
+  
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  background-color: #424750;
+  color: #ffffff;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.dash {
+  color: var(--main-navy-blue);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.displayname {
+  
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  background-color: var(--main-navy-blue);
+  color: var(--main-whitesmoke);
+  padding: 15px;
+  border-radius: 5px;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.competition {
+  
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  background-color: #424750;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  width: 340px;
+  height: 53.2px;
+  outline: 0;
+}

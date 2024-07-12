@@ -1,0 +1,41 @@
+.teamStatistics {
+    width: 392px;
+    height: 874px;
+    background-color: white;
+    position: relative;
+    /* bottom: 874px; */
+    /* left: 320px; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 10px 10px 0px
+}
+
+.teamStatisticsTitle {
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #000000;
+    margin-left: 20px;
+}
+
+.moreMatchesButton{
+    background-image: url(../../../../public/images/arrow-down.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 90px;
+    align-self: center;
+    background-color: #919191;
+    border-radius: 10px;
+    border:none;
+    margin-top: 55px;
+}
+
+.moreMatchesButton:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,140 @@
+.pageContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #0f1521;
+  color: #fff;
+  position: relative;
+}
+
+.pageTabs {
+  font-weight: 500;
+  font-size: 17px;
+  position: absolute;
+  display: flex;
+  gap: 3px;
+  color: #fff;
+  right: 100px;
+  top: -52px;
+}
+
+.pageTabs > div,
+.pageTabs > a {
+  background: rgba(236, 64, 34, 0.63);
+  border: 1px solid #ffffff;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+  top:20px;
+}
+
+.contentContainer {
+  display: flex;
+}
+
+.contentContainer > header {
+  width: 50px;
+  height: calc((100vh - 120px) * var(--scale-multiplier));
+  box-shadow: 9px 0px 5px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.contentContainer > header > span {
+  position: absolute;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(270deg);
+  width: 200px;
+  left: -73px;
+  top: 50vh;
+}
+
+.pitchWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pitchContainer {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.teamTape {
+  position: relative;
+}
+
+.teamTape > img {
+  position: absolute;
+  width: 104px;
+  height: 120px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.logoHome {
+  left: -41px;
+  top: -21px;
+}
+
+.logoAway {
+  left: -1px;
+  top: -21px;
+}
+
+.teamTape > svg:nth-child(2) {
+  display: block;
+  height: calc(100vh - 320px);
+}
+
+.teamTape > svg:nth-child(3) {
+  position: absolute;
+  left: 3px;
+  top: 0;
+  display: block;
+  height: calc(100vh - 340px);
+}
+
+.teamNameHome {
+  position: absolute;
+  top: 300px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  left: 56%;
+  transform: translate(-50%, -50%) rotate(270deg);
+  white-space: nowrap;
+}
+
+.teamNameAway {
+  position: absolute;
+  top: 300px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  left: -22px;
+  top: 50%;
+  left: 44%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  white-space: nowrap;
+}

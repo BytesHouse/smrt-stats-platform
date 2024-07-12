@@ -1,0 +1,61 @@
+.FavoritesPageHeader {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 5px;
+}
+
+.greenPlaylistButton {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+    color: var(--main-whitesmoke);
+    background: var(--main-midnight-blue);
+    border-radius: 10px;
+    width: 157px;
+    padding: 10px 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.bluePlaylistButton {
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+    color: #fff;
+    background: #2B74E1;
+    border-radius: 10px;
+    width: 157px;
+    padding: 10px 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+
+
+.bluePlaylistButton > svg {
+    /* fill: #fff; */
+    width: 20px;
+}
+
+.addPlaylistInput {
+    background: #BEFF4C;
+    border-radius: 10px;
+    padding: 10px 5px;
+    color: #0F1521;
+    border: none;
+    width: calc(100% - 40vw);
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+}

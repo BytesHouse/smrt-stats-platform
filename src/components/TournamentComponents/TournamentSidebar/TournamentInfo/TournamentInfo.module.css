@@ -1,0 +1,48 @@
+.teamInfoContainer {
+  background-color: var(--main-navy-blue);
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: #fff;
+  width: 258px;
+}
+
+.teamInfoContainer img {
+  width: 258px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.teamInfoContainer h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin: 5px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 41px;
+  cursor: pointer;
+}
+
+.teamInfoContainer h3::before {
+  content: '';
+  background: grey;
+  height: 1px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.teamInfoContainer h3::after {
+  content: '';
+  background: grey;
+  height: 1px;
+  width: 50%;
+}
+
+.teamInfoContainerLink {
+  text-decoration: none;
+  color: var(--main-whitesmoke);
+}

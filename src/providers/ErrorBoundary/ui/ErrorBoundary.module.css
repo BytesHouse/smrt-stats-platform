@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0f1521;
+}
+
+.errorPageTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.errorPageTextContainer h3 {
+    color: black;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+.logo {
+    background-image: url(../../../../public/images/newlogo.png);
+    width: 70vw;
+    height: 300px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.container a {
+    margin-top: 20px;
+    color: #b4eb55;
+    text-decoration: none;
+
+}
